@@ -76,7 +76,7 @@ exports.update = async (req, res) => {
 //Delete a Task
 exports.destroy = async (req, res) => {
     try {
-        const data = await Task.findByIdAndRemove(req.params.id);
+        const data = await Task.findByIdAndDelete(req.params.id);
         if (!data) {
             return res.status(404).send({
                 message: `Task not found.`
