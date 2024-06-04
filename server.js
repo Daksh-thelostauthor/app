@@ -22,7 +22,7 @@ mongoose.connect(dbConfig.url, {
 app.use('/tasks', taskRoutes);
 
 app.get('/', (req, res) => {
-    res.json({ "message": "Welcome to the To-Do App" });
+    res.json({ "message": "Welcome to My To-Do Express.js App" });
 });
 
 const PORT = 3000;
